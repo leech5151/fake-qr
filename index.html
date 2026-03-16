@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>비플리끄 한우 오마카세 - 영수증 리뷰</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 2.5rem 1.5rem 1.5rem;
+      text-align: center;
+      background: linear-gradient(135deg, #5a2eeb, #5a8be8);
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -0.02em;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .receipt {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      padding: 1.75rem 1.75rem 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .receipt h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .receipt p {
+      margin: 0.75rem 0;
+    }
+
+    .video-wrap {
+      text-align: center;
+      margin: 0 auto 2.5rem;
+      max-width: 900px;
+    }
+
+    .video-wrap p {
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .video-wrap iframe,
+    .video-wrap video {
+      width: 100%;
+      height: 520px;
+      max-height: 600px;
+      border: 0;
+      border-radius: 12px;
+      background: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.75rem 1.5rem 2rem;
+      font-size: 0.9rem;
+      color: #606060;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 2rem 1rem 1rem;
+      }
+
+      header h1 {
+        font-size: clamp(1.75rem, 6vw, 2.4rem);
+      }
+
+      main {
+        padding: 1.5rem 1rem;
+      }
+
+      .receipt {
+        padding: 1.5rem 1.25rem 2rem;
+      }
+
+      .receipt p {
+        margin: 0.6rem 0;
+        font-size: 0.95rem;
+      }
+
+      .video-wrap iframe,
+      .video-wrap video {
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>비플리끄 한우 오마카세<br>영수증 리뷰</h1>
+  </header>
+
+  <main>
+    <section class="receipt">
+      <h2>영수증 요약</h2>
+      <p><strong>매장:</strong> 비플리끄 한우 오마카세</p>
+      <p><strong>날짜:</strong> 2026-03-18 (수요일)</p>
+      <p><strong>총 금액:</strong> 360,000원</p>
+      <p><strong>리뷰:</strong> 이 페이지는 영수증을 기반으로 한 리뷰를 담는 공간입니다. 아래 동영상에서 실제 방문기와 함께 자세한 내용을 확인하세요.</p>
+    </section>
+
+    <section class="video-wrap">
+      <p>아래 동영상을 시청 후(약 15초) 간단한 설문조사와 비플리끄 한우 오마카세 방문 리뷰를 남겨주세요.</p>
+      <!-- 아래 iframe을 YouTube, Vimeo 등의 영상으로 바꾸하거나 로컬 비디오 파일 경로를 넣을 수 있습니다. -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="영수증 리뷰 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 비플리끄 한우 오마카세 영수증 리뷰
+  </footer>
+</body>
+</html>
