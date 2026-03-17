@@ -54,7 +54,7 @@
     .video-wrap {
       text-align: center;
       margin: 0 auto 2.5rem;
-      max-width: 900px;
+      max-width: 400px;
     }
 
     .video-wrap p {
@@ -63,14 +63,22 @@
       color: #555;
     }
 
-    .video-wrap iframe,
-    .video-wrap video {
+    .video-wrap .iframe-container {
+      position: relative;
       width: 100%;
-      height: 520px;
-      max-height: 600px;
-      border: 0;
+      padding-top: 177.78%; /* 9:16 세로 비율 */
       border-radius: 12px;
+      overflow: hidden;
       background: #000;
+    }
+
+    .video-wrap .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     .survey-button {
@@ -131,11 +139,6 @@
         font-size: 0.95rem;
       }
 
-      .video-wrap iframe,
-      .video-wrap video {
-        height: 320px;
-      }
-
       .survey-button {
         padding: 0.9rem 2rem;
         font-size: 1rem;
@@ -164,7 +167,9 @@
     <section class="video-wrap">
       <p>볼륨을 높혀주세요! 소리가 필요합니다</p>
       <p>아래 동영상을 시청 후(약 15초) 간단한 설문조사와 비플리끄 한우 오마카세 방문 리뷰를 남겨주세요.</p>
-      <iframe src="https://drive.google.com/file/d/1jSFhEQSubsTJx8ukX_kWUAyd7xMJSCr4/preview" allow="autoplay" allowfullscreen></iframe>
+      <div class="iframe-container">
+        <iframe src="https://drive.google.com/file/d/1jSFhEQSubsTJx8ukX_kWUAyd7xMJSCr4/preview" allow="autoplay" allowfullscreen></iframe>
+      </div>
     </section>
 
     <section class="survey-wrap">
